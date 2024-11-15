@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 :host {
-    height: 100px;
+    height: 80px;
     background-color: $background1;
     width: 100%;
     display: flex;
@@ -9,9 +9,7 @@
     align-items: center;
 }
 
-h1 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: white;
+img {
+    height: 100%;
+    width: auto;
 }

@@ -1,0 +1,12 @@
+@if (moment !== undefined) {
+<app-card>
+    <div header class="header">
+        <img [src]="moment.profileImage" />
+        <span>{{ moment.userId }}</span>
+    </div>
+    <div class="content">
+        <img [src]="moment.momentImage" />
+    </div>
+    <span footer>Footer</span>
+</app-card>
+}

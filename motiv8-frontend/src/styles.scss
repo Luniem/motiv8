@@ -23,7 +23,7 @@ $padding-lg: 24px;
 $padding-md: 12px;
 $padding-sm: 6px;
 
-$border-radius: 5px;
+$border-radius: 0px;
 
 body,
 html {
@@ -35,4 +35,8 @@ html {
     font-style: normal;
     background-color: $background2;
     color: white;
+}
+
+* {
+    box-sizing: border-box;
 }

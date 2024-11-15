@@ -1,5 +1,3 @@
-<app-card>
-    <p>Header</p>
-    <p>Main</p>
-    <p>Footer</p>
-</app-card>
+@if (moments(); as moments) { @for (moment of moments; track $index) {
+<app-moment [moment]="moment"></app-moment>
+} }

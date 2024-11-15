@@ -3,7 +3,8 @@
 :host {
     display: flex;
     flex-direction: column;
-    padding: $padding-lg $padding-md;
+    padding: $padding-md;
     background-color: $background1;
     border-radius: $border-radius;
+    gap: 10px;
 }

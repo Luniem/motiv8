@@ -1,0 +1,22 @@
+@import "../../styles.scss";
+
+.content {
+    width: 100%;
+}
+
+.content > img {
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header > img {
+    width: auto;
+    height: 40px;
+    border-radius: 50%;
+}
