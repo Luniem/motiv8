@@ -1,0 +1,38 @@
+$background1: #121212;
+$background2: #282828;
+$background3: #3f3f3f;
+$background4: #575757;
+$background5: #717171;
+$background6: #8b8b8b;
+
+$primary1: #9017f0;
+$primary2: #a03ef3;
+$primary3: #af5af5;
+$primary4: #bd73f7;
+$primary5: #ca8bf9;
+$primary6: #d6a2fb;
+
+$test1: #1f1625;
+$test2: #342b3a;
+$test3: #4a424f;
+$test4: #615a66;
+$test5: #7a737e;
+$test6: #938e96;
+
+$padding-lg: 24px;
+$padding-md: 12px;
+$padding-sm: 6px;
+
+$border-radius: 5px;
+
+body,
+html {
+    margin: 0;
+    height: 100dvh;
+    width: 100dvw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: $background2;
+    color: white;
+}

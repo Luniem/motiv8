@@ -1,0 +1,9 @@
+@import "../../styles.scss";
+
+:host {
+    display: flex;
+    flex-direction: column;
+    padding: $padding-lg $padding-md;
+    background-color: $background1;
+    border-radius: $border-radius;
+}
