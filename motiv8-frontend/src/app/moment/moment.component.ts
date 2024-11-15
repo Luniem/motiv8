@@ -12,4 +12,13 @@ import { Moment } from '../models/post';
 export class MomentComponent {
     @Input()
     moment?: Moment;
+
+    getRemainingReactsVar() {
+        if (this.moment !== undefined) {
+            const remaining = this.moment.reacts.length - 3;
+            return `--remaining-reacts: '+${remaining}'`;
+        }
+
+        throw new Error('Moment is undefined');
+    }
 }

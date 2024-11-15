@@ -6,7 +6,25 @@
     </div>
     <div class="content">
         <img [src]="moment.momentImage" />
+        <div class="action-bar"></div>
     </div>
-    <span footer>Footer</span>
+    <div class="footer" footer>
+        <div
+            class="reacts"
+            [class.even-more]="moment.reacts.length > 3"
+            [style]="getRemainingReactsVar()"
+        >
+            @if (moment.reacts.length > 0) {
+            <img id="first-react" [src]="moment.reacts[0]" />
+            } @if (moment.reacts.length > 1) {
+            <img id="second-react" [src]="moment.reacts[1]" />
+            } @if (moment.reacts.length > 2) {
+            <img id="third-react" [src]="moment.reacts[2]" />
+            }
+        </div>
+        <div class="comments">
+            <span>No comments</span>
+        </div>
+    </div>
 </app-card>
 }

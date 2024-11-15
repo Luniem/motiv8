@@ -2,11 +2,22 @@
 
 .content {
     width: 100%;
+    position: relative;
 }
 
 .content > img {
     width: 100%;
     height: auto;
+    display: block;
+}
+
+.action-bar {
+    background-color: $background2;
+    opacity: 0.85;
+    position: absolute;
+    right: $padding-sm;
+    bottom: $padding-sm;
+    border-radius: 50px;
 }
 
 .header {
@@ -19,4 +30,78 @@
     width: auto;
     height: 40px;
     border-radius: 50%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.footer > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.footer > .reacts {
+    position: relative;
+    width: 110px;
+    cursor: pointer;
+}
+
+.footer > .reacts > img {
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid $background5;
+}
+
+#first-react {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+
+    &.even-more {
+        filter: brightness(0.2);
+    }
+}
+
+.even-more::before {
+    content: var(--remaining-reacts);
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    color: white;
+    opacity: 0.8;
+    z-index: 4;
+}
+
+.even-more #first-react {
+    filter: brightness(0.2);
+}
+
+#second-react {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    z-index: 2;
+}
+
+#third-react {
+    position: absolute;
+    left: 60px;
+    top: 0;
+    z-index: 1;
+}
+
+.footer > .comments {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }

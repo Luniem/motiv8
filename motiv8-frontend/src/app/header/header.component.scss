@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 :host {
-    height: 80px;
+    height: 60px;
     background-color: $background1;
     width: 100%;
     display: flex;
@@ -11,5 +11,6 @@
 
 img {
     height: 100%;
+    padding: $padding-sm;
     width: auto;
 }
